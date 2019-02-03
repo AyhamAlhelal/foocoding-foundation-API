@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <meta name="keywords" content="" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans"
-        />
-        <link rel="stylesheet" href="css/app.css" />
-    </head>
-    <body>
-        <header class="page-header">
-            <h1>Comming Soon</h1>
-            <p>The website is still under construction</p>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Ayham Alhelal" />
+    <meta name="keywords" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/code-1.ico" />
+    <title>FooCoding - API</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-repository">
+        <div class="bg-video u-fixed-position">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/Words.mp4" type="video/mp4" />
+            <source src="img/Words.webm" type="video/webm" />
+            <source src="img/Words.ogv" type="video/ogv" />
+            Your browser is not supported!
+          </video>
+        </div>
 
-        <footer>
-            &copy;
-        </footer>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-primary">
+            FooCoding - API
+          </h2>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <select id="select-repository">
+            <option disabled selected>Repository</option>
+          </select>
+        </div>
 
-        <script src="js/app.js"></script>
-    </body>
+        <div class="row">
+          <div class="repository">
+            <div class="repository__text">
+              <h3 class="heading-secondary u-margin-bottom-small u-center-text">
+                FooCoding repository
+              </h3>
+
+              <div class="repository__text--details" id="repository">
+                <ul>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Contributors">
+          <div class="row">
+            &nbsp;
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="././js/Util.js"></script>
+    <script src="././js/Repository.js"></script>
+    <script src="././js/Contributor.js"></script>
+    <script src="././js/App.js"></script>
+  </body>
 </html>
